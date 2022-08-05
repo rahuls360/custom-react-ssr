@@ -1,22 +1,14 @@
-import React from "react";
-import "./App.css";
+import React from 'react';
+import './App.css';
+import Counter from './Counter';
+import User from './User';
 
 function App() {
-  const [count, setCount] = React.useState(0);
-
-  const increment = () => {
-    setCount(count + 1);
-  };
-
-  const decrement = () => {
-    setCount(count - 1);
-  };
-
   return (
     <>
-      <p>{count}</p>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
+      <h1>Custom SSR rending app</h1>
+      <Counter />
+      <User />
     </>
   );
 }
